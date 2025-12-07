@@ -1,0 +1,14 @@
+this string would be logged
+calling_function'greeting with args=() kwargs={}
+calling_function'greeting returned None
+calling_function'return_true with args=(2, 3, 4) kwargs={}
+calling_function'return_true returned True
+calling_function'return_log_dec with args=() kwargs={'name': 'Belle', 'state': 'California'}
+calling_function'return_log_dec returned {'name': 'Belle', 'state': 'California'}
+this string would be logged
+calling_function'greeting with args=() kwargs={}
+calling_function'greeting returned None
+calling_function'return_true with args=(2, 3, 4) kwargs={}
+calling_function'return_true returned True
+calling_function'return_log_dec with args=() kwargs={'name': 'Belle', 'state': 'California'}
+calling_function'return_log_dec returned {'name': 'Belle', 'state': 'California'}
