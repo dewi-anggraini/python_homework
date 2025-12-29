@@ -35,6 +35,14 @@ def test_grade():
     assert a1.grade(75,85,95) == "B"
     assert a1.grade("three", "blind", "mice") == "Invalid data was provided."
 
+# test
+if __name__ == "__main__":
+    test_greet()
+    test_calc()
+    test_data_type_conversion()
+    test_grade()
+print("All test passed!")
+
 def test_repeat():
     assert a1.repeat("up,", 4) == "up,up,up,up,"
 
