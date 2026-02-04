@@ -1,0 +1,5 @@
+The biggest challenge I encountered was finding the right tag. 
+Selenium looked and looked, but found nothing, which caused TimeoutException in many of my approaches. 
+So, I tried breaking it down into smaller details, such as the main page title “OWASP Top Ten 2025”. 
+I went directly to that page and took all the links in the main content (<a> tags) page
+instead of using headings or "//a[contains(text(),'Top Ten 2025')] directly (No error here only empty []).
