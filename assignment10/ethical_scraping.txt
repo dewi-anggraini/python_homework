@@ -1,0 +1,45 @@
+# Task 1: Review robots.txt to Ensure Policy Compliance
+Here’s what I found in Durham County Library’s robots.txt:
+1.	User-agent: \* → Applies to all bots.
+    #	Disallow: /staff/ → I cannot scrape or crawl anything under /staff/.
+2.	Specific bots blocked entirely: AdsBot-Google, Amazonbot, Applebot, ChatGPT, ClaudeBot, GPTBot, PerplexityBot, and many other AI/data bots.
+    #	These are explicitly disallowed from accessing the site.
+3.	No general disallow for all bots → Aside from /staff/, other sections of the site are not restricted for generic crawlers.
+
+What I Can Do Safely:
+1.	Scraping public pages like catalog search results, or announcements is allowed.
+2.	Avoid restricted directories (/staff/).
+
+What I Cannot Do:
+•	Do not scrape /staff/ pages.
+•	Do not use or identify as blocked bots (e.g., Amazonbot, ClaudeBot, GPTBot).
+
+
+# Task 2: Understanding HTML and the DOM for the Durham Library Site
+
+Search result container: li.cp-search-result-item
+Title: span.title-content
+Author(s): a.author-link 
+Format/Year: span.display-info-primary
+
+
+# Task 5: Ethical Web Scraping
+Which sections of the website are restricted for crawling?
+- Restricted sections include: /w/ (backend script), /api/, /trap/, and multiple versions of /wiki/Special:
+
+Are there specific rules for certain user agents?
+- Yes, the file specifies rules for certain user agents
+(Wikipedia Robots.txt.), examples:
+- User-agent: SemrushBot
+Crawl-delay: 5, the bot must wait 5 seconds between requests.
+- Misbehaving, requests much too fast
+User-agent: fast
+Disallow: /  , fast crawler blocked entirely.
+
+Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose
+and how it promotes ethical scraping.
+- Websites use robots.txt to tell web crawlers which parts of the site they can visit and which parts they should avoid.
+- This helps protect private or heavy pages, and keeps the website from getting too many requests at oncq.
+- By following these rules, crawling and scraping stays respectful and fair, giving access to useful information
+without hurting the site.
+
